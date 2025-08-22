@@ -43,7 +43,7 @@ export default function Index() {
   const tools = [
     {
       icon: FileText,
-      name: 'Di Maior Currículo',
+      name: 'Di Maior CV Pro',
       description: 'Construtor de currículos com IA que te ajuda a criar um CV profissional e impactante.',
       color: 'bg-dimaior-primary',
       href: '#curriculo'
@@ -64,14 +64,14 @@ export default function Index() {
     },
     {
       icon: PiggyBank,
-      name: 'Di Maior Poupa',
+      name: 'Di Maior Poupa+',
       description: 'Planejamento financeiro inteligente com IA para alcançar seus objetivos.',
       color: 'bg-dimaior-orange',
       href: '#poupa'
     },
     {
       icon: GraduationCap,
-      name: 'Di Maior Teste Vocacional',
+      name: 'Di Maior VocaTest',
       description: 'Descubra sua vocação e encontre o caminho profissional ideal para você.',
       color: 'bg-dimaior-yellow',
       href: '#vocacional'
