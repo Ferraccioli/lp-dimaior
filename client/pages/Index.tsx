@@ -13,8 +13,7 @@ import {
   CheckCircle,
   Users,
   Target,
-  Zap,
-  Search
+  Zap
 } from 'lucide-react';
 
 export default function Index() {
@@ -83,7 +82,7 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
+      {/* Header - Simplificado */}
       <header className="bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
@@ -95,266 +94,140 @@ export default function Index() {
               />
             </div>
             
-            <nav className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-gray-600 hover:text-dimaior-primary transition-colors">Home</a>
-              <a href="#" className="text-gray-600 hover:text-dimaior-primary transition-colors">Sobre</a>
-              <a href="#" className="text-gray-600 hover:text-dimaior-primary transition-colors">Artigos</a>
-              <a href="#" className="text-gray-600 hover:text-dimaior-primary transition-colors">Ajude o dimaior</a>
-              <a href="#" className="text-gray-600 hover:text-dimaior-primary transition-colors">Solicitação de conteúdo</a>
-            </nav>
-
-            <div className="flex items-center space-x-4">
-              <div className="relative hidden lg:block">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-                <input 
-                  type="text" 
-                  placeholder="Qual é a sua dúvida?" 
-                  className="pl-10 pr-4 py-2 border border-gray-200 rounded-full text-sm focus:outline-none focus:border-dimaior-primary w-64"
-                />
-              </div>
-              <Button 
-                onClick={scrollToForm}
-                className="bg-dimaior-primary hover:bg-dimaior-primary/90 text-white rounded-full px-6"
-              >
-                Cadastre-se
-              </Button>
-            </div>
+            <Button 
+              onClick={scrollToForm}
+              className="bg-dimaior-primary hover:bg-dimaior-primary/90 text-white rounded-full px-6"
+            >
+              Quero fazer parte
+            </Button>
           </div>
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section - Layout lado a lado */}
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center bg-dimaior-primary/10 text-dimaior-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-              + 5.000 dúvidas descomplicadas
-            </div>
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              d:maior te ajuda a se virar com a{' '}
-              <span className="relative">
-                vida adulta
-                <div className="absolute -bottom-2 left-0 w-full h-2 bg-dimaior-primary/30 rounded-full"></div>
-              </span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet 
-              odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Conteúdo do Título e Descrição */}
+            <div className="space-y-8">
+              <div className="inline-flex items-center bg-dimaior-primary/10 text-dimaior-primary px-4 py-2 rounded-full text-sm font-medium">
+                + 5.000 dúvidas descomplicadas
+              </div>
+              
+              <div className="space-y-6">
+                <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  d:maior te ajuda a se virar com a{' '}
+                  <span className="relative">
+                    vida adulta
+                    <div className="absolute -bottom-2 left-0 w-full h-2 bg-dimaior-primary/30 rounded-full"></div>
+                  </span>
+                </h1>
+                
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Transforme os desafios da vida adulta em conquistas! Nossa plataforma oferece ferramentas 
+                  inteligentes e conteúdo especializado para jovens que querem tomar as rédeas de sua vida 
+                  pessoal, profissional e financeira com confiança e conhecimento.
+                </p>
+              </div>
+              
+              <div className="flex flex-wrap gap-6">
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-dimaior-primary" />
+                  <span className="text-gray-700">Ferramentas com IA</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Users className="w-5 h-5 text-dimaior-primary" />
+                  <span className="text-gray-700">Para jovens 18-29 anos</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Zap className="w-5 h-5 text-dimaior-primary" />
+                  <span className="text-gray-700">100% Gratuito</span>
+                </div>
+              </div>
 
-            {/* Search Bar */}
-            <div className="max-w-2xl mx-auto mb-8">
-              <div className="relative">
-                <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                <input 
-                  type="text" 
-                  placeholder="Qual é sua dúvida? Precisa de ajuda help?"
-                  className="w-full pl-12 pr-32 py-4 border border-gray-200 rounded-full text-lg focus:outline-none focus:border-dimaior-primary shadow-sm"
-                />
+              <div className="pt-4">
                 <Button 
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-dimaior-primary hover:bg-dimaior-primary/90 text-white rounded-full px-8"
+                  onClick={scrollToForm}
+                  size="lg"
+                  className="bg-gradient-to-r from-dimaior-primary to-dimaior-primary/80 hover:from-dimaior-primary/90 hover:to-dimaior-primary/70 text-white px-8 py-6 text-lg rounded-full"
                 >
-                  Pesquisar
+                  <Target className="w-5 h-5 mr-2" />
+                  Comece sua jornada agora
                 </Button>
               </div>
             </div>
 
-            {/* Category Icons */}
-            <div className="flex flex-wrap items-center justify-center gap-6 mb-16">
-              <div className="flex items-center space-x-2 bg-gray-50 rounded-full px-4 py-2">
-                <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">🏠</span>
-                </div>
-                <span className="text-sm font-medium text-gray-700">Habitação</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-gray-50 rounded-full px-4 py-2">
-                <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">💰</span>
-                </div>
-                <span className="text-sm font-medium text-gray-700">Imposto de Renda</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-gray-50 rounded-full px-4 py-2">
-                <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">🪖</span>
-                </div>
-                <span className="text-sm font-medium text-gray-700">Alistamento Militar</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-gray-50 rounded-full px-4 py-2">
-                <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">🔧</span>
-                </div>
-                <span className="text-sm font-medium text-gray-700">Manutenção</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-gray-50 rounded-full px-4 py-2">
-                <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">🆘</span>
-                </div>
-                <span className="text-sm font-medium text-gray-700">Primeiros Socorros</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-gray-50 rounded-full px-4 py-2">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">✈️</span>
-                </div>
-                <span className="text-sm font-medium text-gray-700">Viagens</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Contact Form Card */}
-          <div className="max-w-md mx-auto">
-            <Card className="shadow-lg border-0 bg-white" id="contact-form">
-              <CardHeader className="text-center pb-4">
-                <CardTitle className="text-2xl font-bold text-gray-900">
-                  Fique por dentro do Di Maior
-                </CardTitle>
-                <CardDescription className="text-gray-600">
-                  Cadastre-se e receba atualizações sobre nossas ferramentas e novidades
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                {!isSubmitted ? (
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="nome" className="text-gray-700">Nome completo</Label>
-                      <Input
-                        id="nome"
-                        name="nome"
-                        type="text"
-                        placeholder="Seu nome completo"
-                        value={formData.nome}
-                        onChange={handleInputChange}
-                        required
-                        className="border-gray-200 focus:border-dimaior-primary focus:ring-dimaior-primary rounded-lg"
-                      />
+            {/* Formulário de Contato */}
+            <div className="lg:pl-8">
+              <Card className="shadow-2xl border-0 bg-white" id="contact-form">
+                <CardHeader className="text-center">
+                  <CardTitle className="text-2xl font-bold text-gray-900">
+                    Fique por dentro do Di Maior
+                  </CardTitle>
+                  <CardDescription className="text-gray-600">
+                    Cadastre-se e receba atualizações sobre nossas ferramentas e novidades
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  {!isSubmitted ? (
+                    <form onSubmit={handleSubmit} className="space-y-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="nome" className="text-gray-700">Nome completo</Label>
+                        <Input
+                          id="nome"
+                          name="nome"
+                          type="text"
+                          placeholder="Seu nome completo"
+                          value={formData.nome}
+                          onChange={handleInputChange}
+                          required
+                          className="border-gray-200 focus:border-dimaior-primary focus:ring-dimaior-primary rounded-lg"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="email" className="text-gray-700">E-mail</Label>
+                        <Input
+                          id="email"
+                          name="email"
+                          type="email"
+                          placeholder="seu@email.com"
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          required
+                          className="border-gray-200 focus:border-dimaior-primary focus:ring-dimaior-primary rounded-lg"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="telefone" className="text-gray-700">Telefone</Label>
+                        <Input
+                          id="telefone"
+                          name="telefone"
+                          type="tel"
+                          placeholder="(11) 99999-9999"
+                          value={formData.telefone}
+                          onChange={handleInputChange}
+                          required
+                          className="border-gray-200 focus:border-dimaior-primary focus:ring-dimaior-primary rounded-lg"
+                        />
+                      </div>
+                      <Button 
+                        type="submit" 
+                        className="w-full bg-dimaior-primary hover:bg-dimaior-primary/90 text-white py-3 rounded-lg text-lg font-medium"
+                      >
+                        Quero fazer parte!
+                      </Button>
+                    </form>
+                  ) : (
+                    <div className="text-center py-8 space-y-4">
+                      <CheckCircle className="w-16 h-16 text-dimaior-primary mx-auto" />
+                      <h3 className="text-xl font-semibold text-gray-900">Cadastro realizado!</h3>
+                      <p className="text-gray-600">
+                        Obrigado pelo seu interesse. Em breve você receberá novidades do Di Maior!
+                      </p>
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email" className="text-gray-700">E-mail</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="seu@email.com"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        className="border-gray-200 focus:border-dimaior-primary focus:ring-dimaior-primary rounded-lg"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="telefone" className="text-gray-700">Telefone</Label>
-                      <Input
-                        id="telefone"
-                        name="telefone"
-                        type="tel"
-                        placeholder="(11) 99999-9999"
-                        value={formData.telefone}
-                        onChange={handleInputChange}
-                        required
-                        className="border-gray-200 focus:border-dimaior-primary focus:ring-dimaior-primary rounded-lg"
-                      />
-                    </div>
-                    <Button 
-                      type="submit" 
-                      className="w-full bg-dimaior-primary hover:bg-dimaior-primary/90 text-white py-3 rounded-lg text-lg font-medium"
-                    >
-                      Quero fazer parte!
-                    </Button>
-                  </form>
-                ) : (
-                  <div className="text-center py-8 space-y-4">
-                    <CheckCircle className="w-16 h-16 text-dimaior-primary mx-auto" />
-                    <h3 className="text-xl font-semibold text-gray-900">Cadastro realizado!</h3>
-                    <p className="text-gray-600">
-                      Obrigado pelo seu interesse. Em breve você receberá novidades do Di Maior!
-                    </p>
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Principais Tópicos Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center mb-12">
-            <div className="w-8 h-8 bg-dimaior-primary rounded-full flex items-center justify-center mr-3">
-              <div className="w-4 h-4 bg-white rounded-full"></div>
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900">Principais tópicos</h2>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Featured Article */}
-            <div className="lg:col-span-2">
-              <Card className="overflow-hidden border-0 shadow-lg">
-                <div className="relative h-80 bg-gradient-to-r from-amber-100 to-orange-200">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&crop=face" 
-                    alt="Profissional" 
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <div className="bg-dimaior-primary text-white px-3 py-1 rounded-full text-sm font-medium inline-block mb-3">
-                      #Profissional
-                    </div>
-                    <h3 className="text-white text-2xl font-bold mb-2">
-                      O que fazer na sua primeira entrevista de emprego?
-                    </h3>
-                    <p className="text-white/90 text-sm">
-                      Confira essas dicas para causar uma boa primeira impressão.
-                    </p>
-                  </div>
-                </div>
+                  )}
+                </CardContent>
               </Card>
-            </div>
-
-            {/* Sidebar Articles */}
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Mais Acessados</h3>
-                <div className="space-y-4">
-                  <div className="flex space-x-3">
-                    <img 
-                      src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=80&h=80&fit=crop" 
-                      alt=""
-                      className="w-16 h-16 rounded-lg object-cover"
-                    />
-                    <div className="flex-1">
-                      <h4 className="font-medium text-gray-900 text-sm">Sou madrinha de casamento, e agora?</h4>
-                      <p className="text-gray-600 text-xs mt-1">Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum...</p>
-                      <a href="#" className="text-dimaior-primary text-xs hover:underline">Ler sobre</a>
-                    </div>
-                  </div>
-                  
-                  <div className="flex space-x-3">
-                    <img 
-                      src="https://images.unsplash.com/photo-1556740758-90de374c12ad?w=80&h=80&fit=crop" 
-                      alt=""
-                      className="w-16 h-16 rounded-lg object-cover"
-                    />
-                    <div className="flex-1">
-                      <h4 className="font-medium text-gray-900 text-sm">Quanto devo gastar por mês em mercado?</h4>
-                      <p className="text-gray-600 text-xs mt-1">Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum...</p>
-                      <a href="#" className="text-dimaior-primary text-xs hover:underline">Ler sobre</a>
-                    </div>
-                  </div>
-
-                  <div className="flex space-x-3">
-                    <img 
-                      src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=80&h=80&fit=crop" 
-                      alt=""
-                      className="w-16 h-16 rounded-lg object-cover"
-                    />
-                    <div className="flex-1">
-                      <h4 className="font-medium text-gray-900 text-sm">O que fazer se o carro engulhar no meio da estrada?</h4>
-                      <p className="text-gray-600 text-xs mt-1">Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum...</p>
-                      <a href="#" className="text-dimaior-primary text-xs hover:underline">Ler sobre</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
