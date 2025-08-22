@@ -110,17 +110,16 @@ export default function Index() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  d:maior te ajuda a se virar com a{' '}
+                  A vida adulta não vem com manual.{' '}
                   <span className="relative">
-                    vida adulta
+                    O Di Maior é o seu guia.
                     <div className="absolute -bottom-2 left-0 w-full h-2 bg-dimaior-primary/30 rounded-full"></div>
                   </span>
                 </h1>
-                
+
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Transforme os desafios da vida adulta em conquistas! Nossa plataforma oferece ferramentas 
-                  inteligentes e conteúdo especializado para jovens que querem tomar as rédeas de sua vida 
-                  pessoal, profissional e financeira com confiança e conhecimento.
+                  Mais de 85% dos jovens brasileiros sentem que a escola não os preparou para a vida adulta.
+                  O Di Maior nasceu para mudar isso.
                 </p>
               </div>
 
@@ -218,19 +217,13 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                Conheça a história do dimaior e sua missão.
+                Um hub para jovens que querem crescer de verdade
               </h2>
-              <p className="text-lg text-gray-600 font-medium">
-                "O guia para a vida adulta."
+              <p className="text-gray-600 leading-relaxed">
+                O Di Maior é uma plataforma feita para jovens de 18 a 29 anos que buscam autonomia, clareza e preparo para a vida adulta.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Somos o dimaior, um portal dedicado a ajudar jovens a navegarem pelos 
-                desafios da vida adulta, pois sabemos que não é nada fácil. Aqui, você 
-                encontra informações essenciais sobre como estar pronto para a vida 
-                adulta, como habitação, finanças, leis e muito mais.
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Tudo na linguagem que você entende!
+                Com uma linguagem simples, gamificação e conteúdos práticos, você aprende o que realmente importa: dinheiro, carreira, documentos, saúde mental e muito mais.
               </p>
               <Button 
                 className="bg-dimaior-primary hover:bg-dimaior-primary/90 text-white rounded-full px-8 py-3"
