@@ -27,6 +27,14 @@ export default {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        // Di Maior brand colors
+        dimaior: {
+          blue: "hsl(var(--dimaior-blue))",
+          green: "hsl(var(--dimaior-green))",
+          orange: "hsl(var(--dimaior-orange))",
+          purple: "hsl(var(--dimaior-purple))",
+          yellow: "hsl(var(--dimaior-yellow))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
