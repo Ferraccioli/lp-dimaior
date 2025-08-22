@@ -294,8 +294,7 @@ export default function Index() {
                 Em breve: O Guia Completo para a Vida Adulta
               </h2>
               <p className="text-gray-300 max-w-2xl mx-auto">
-                Cadastre-se para receber entre os primeiros a saber assim que o nosso e-book estiver 
-                disponível e receba o conteúdo exclusivo!
+                Se preparar para a vida adulta não precisa ser confuso. Criamos um eBook prático e direto ao ponto, para você começar sua jornada hoje.
               </p>
             </div>
             
