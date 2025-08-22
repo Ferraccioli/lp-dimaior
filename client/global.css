@@ -54,6 +54,13 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Di Maior brand colors */
+    --dimaior-blue: 210 100% 50%;
+    --dimaior-green: 142 76% 45%;
+    --dimaior-orange: 24 100% 60%;
+    --dimaior-purple: 260 84% 60%;
+    --dimaior-yellow: 45 100% 60%;
   }
 
   .dark {
@@ -92,6 +99,13 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Di Maior brand colors - dark mode */
+    --dimaior-blue: 210 100% 60%;
+    --dimaior-green: 142 76% 50%;
+    --dimaior-orange: 24 100% 65%;
+    --dimaior-purple: 260 84% 65%;
+    --dimaior-yellow: 45 100% 65%;
   }
 }
 
