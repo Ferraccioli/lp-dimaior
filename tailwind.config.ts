@@ -12,6 +12,9 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      sans: ['Lexend Deca', 'system-ui', 'sans-serif'],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -29,6 +32,7 @@ export default {
         },
         // Di Maior brand colors
         dimaior: {
+          primary: "hsl(var(--dimaior-primary))",
           blue: "hsl(var(--dimaior-blue))",
           green: "hsl(var(--dimaior-green))",
           orange: "hsl(var(--dimaior-orange))",
