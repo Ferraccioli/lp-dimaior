@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -56,11 +58,16 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Di Maior brand colors */
+    --dimaior-primary: 165 65% 50%; /* #33CC99 */
     --dimaior-blue: 210 100% 50%;
     --dimaior-green: 142 76% 45%;
     --dimaior-orange: 24 100% 60%;
     --dimaior-purple: 260 84% 60%;
     --dimaior-yellow: 45 100% 60%;
+
+    /* Override primary with Di Maior primary */
+    --primary: 165 65% 50%; /* #33CC99 */
+    --primary-foreground: 0 0% 100%;
   }
 
   .dark {
@@ -101,11 +108,16 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Di Maior brand colors - dark mode */
+    --dimaior-primary: 165 65% 55%; /* #33CC99 lighter */
     --dimaior-blue: 210 100% 60%;
     --dimaior-green: 142 76% 50%;
     --dimaior-orange: 24 100% 65%;
     --dimaior-purple: 260 84% 65%;
     --dimaior-yellow: 45 100% 65%;
+
+    /* Override primary with Di Maior primary */
+    --primary: 165 65% 55%; /* #33CC99 lighter */
+    --primary-foreground: 0 0% 100%;
   }
 }
 
@@ -116,5 +128,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   }
 }
