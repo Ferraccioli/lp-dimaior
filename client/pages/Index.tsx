@@ -11,9 +11,7 @@ import {
   GraduationCap,
   Download,
   CheckCircle,
-  Users,
-  Target,
-  Zap
+  Target
 } from 'lucide-react';
 
 export default function Index() {
@@ -110,10 +108,6 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Conteúdo do Título e Descrição */}
             <div className="space-y-8">
-              <div className="inline-flex items-center bg-dimaior-primary/10 text-dimaior-primary px-4 py-2 rounded-full text-sm font-medium">
-                + 5.000 dúvidas descomplicadas
-              </div>
-              
               <div className="space-y-6">
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   d:maior te ajuda a se virar com a{' '}
@@ -128,21 +122,6 @@ export default function Index() {
                   inteligentes e conteúdo especializado para jovens que querem tomar as rédeas de sua vida 
                   pessoal, profissional e financeira com confiança e conhecimento.
                 </p>
-              </div>
-              
-              <div className="flex flex-wrap gap-6">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-dimaior-primary" />
-                  <span className="text-gray-700">Ferramentas com IA</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Users className="w-5 h-5 text-dimaior-primary" />
-                  <span className="text-gray-700">Para jovens 18-29 anos</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Zap className="w-5 h-5 text-dimaior-primary" />
-                  <span className="text-gray-700">100% Gratuito</span>
-                </div>
               </div>
 
               <div className="pt-4">
@@ -233,44 +212,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Tools Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Ferramentas que transformam sua vida
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Acesse nosso conjunto de ferramentas inteligentes, desenvolvidas especialmente 
-              para jovens que querem conquistar seus objetivos pessoais e profissionais.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {tools.map((tool, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md hover:-translate-y-1 bg-white">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className={`${tool.color} p-3 rounded-xl text-white group-hover:scale-110 transition-transform`}>
-                      <tool.icon className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900">{tool.name}</h3>
-                  </div>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{tool.description}</p>
-                  <Button 
-                    variant="outline" 
-                    className="w-full border-gray-200 hover:bg-gray-50 text-gray-700 rounded-lg"
-                  >
-                    Acessar ferramenta
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
+      {/* About Section - Movida para cima */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -304,6 +246,43 @@ export default function Index() {
                 className="w-full h-96 object-cover rounded-3xl"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tools Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Ferramentas que transformam sua vida
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Acesse nosso conjunto de ferramentas inteligentes, desenvolvidas especialmente 
+              para jovens que querem conquistar seus objetivos pessoais e profissionais.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {tools.map((tool, index) => (
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md hover:-translate-y-1 bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className={`${tool.color} p-3 rounded-xl text-white group-hover:scale-110 transition-transform`}>
+                      <tool.icon className="w-6 h-6" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900">{tool.name}</h3>
+                  </div>
+                  <p className="text-gray-600 mb-6 leading-relaxed">{tool.description}</p>
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-gray-200 hover:bg-gray-50 text-gray-700 rounded-lg"
+                  >
+                    Acessar ferramenta
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
