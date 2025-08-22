@@ -110,7 +110,7 @@ export default function Index() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                  A vida adulta não vem com manual.\n{' '}
+                  A vida adulta não vem com manual.{'\n'}
                   <span className="relative">
                     O Di Maior é o seu guia.
                     <div className="absolute -bottom-2 left-0 w-full h-2 bg-dimaior-primary/30 rounded-full"></div>
