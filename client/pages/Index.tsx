@@ -109,7 +109,7 @@ export default function Index() {
             {/* Conteúdo do Título e Descrição */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
                   A vida adulta não vem com manual.{' '}
                   <span className="relative">
                     O Di Maior é o seu guia.
